@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              DarkMagenta: "#502050",
+              SoftPink: "#EE68A4",
+              GrayishMagenta: "#937B92",
+              LightMagenta: "#F7F2F7",
+              White: "#FFFFFF",
+            },
+            fontFamily: {
+              League: "'League Spartan', 'sans-serif'",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@40;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="w-full h-screen font-League text-base flex-col">
+    <main class="md:w-full h-screen flex flex-col px-5 py-5 md:px-40 md:py-10 text-center md:text-start">
+      <section class="w-full md:flex">
+        <div class="md:w-1/2 md:pr-8">
+          <h1 class="text-5xl md:text-7xl text-DarkMagenta font-semibold">
+            10,000+ of our users love our products.
+          </h1>
+          <p class="text-xl md:text-2xl text-GrayishMagenta mt-5">
+            We only provide great products combined with excellent customer
+            service. See what our satisfied customers are saying about our
+            services.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2 flex flex-col justify-center text-DarkMagenta">
+          <div
+            class="w-full md:w-[70%] bg-LightMagenta md:flex md:gap-10 justify-center md:ml-5 py-4 mb-5 rounded-lg"
+          >
+            <div class="flex gap-2 justify-center items-center">
+              <img src="./images/icon-star.svg" alt="icon-star" />
+              <img src="./images/icon-star.svg" alt="icon-star" />
+              <img src="./images/icon-star.svg" alt="icon-star" />
+              <img src="./images/icon-star.svg" alt="icon-star" />
+              <img src="./images/icon-star.svg" alt="icon-star" />
+            </div>
+            <p class="text-xl">Rated 5 Stars in Reviews</p>
+          </div>
+          <div
+            class="w-full md:w-[70%] bg-LightMagenta md:flex justify-center gap-10 py-4 mb-5 md:ml-20 rounded-lg"
+          >
+            <div class="flex gap-2 justify-center items-center">
+              <img src="./images/icon-star.svg" alt="icon-star" />
+              <img src="./images/icon-star.svg" alt="icon-star" />
+              <img src="./images/icon-star.svg" alt="icon-star" />
+              <img src="./images/icon-star.svg" alt="icon-star" />
+              <img src="./images/icon-star.svg" alt="icon-star" />
+            </div>
+            <p class="text-xl">Rated 5 Stars in Report Guru</p>
+          </div>
+          <div
+            class="w-full md:w-[70%] bg-LightMagenta md:flex md:justify-end gap-8 py-4 md:pr-8 md:ml-36 rounded-lg"
+          >
+            <div class="flex gap-2 justify-center items-center">
+              <img src="./images/icon-star.svg" alt="icon-star" />
+              <img src="./images/icon-star.svg" alt="icon-star" />
+              <img src="./images/icon-star.svg" alt="icon-star" />
+              <img src="./images/icon-star.svg" alt="icon-star" />
+              <img src="./images/icon-star.svg" alt="icon-star" />
+            </div>
+            <p class="text-xl">Rated 5 Stars in BestTech</p>
+          </div>
+        </div>
+      </section>
+      <section class="md:flex text-LightMagenta gap-8 mt-10">
+        <div class="w-full md:h-[85%] bg-DarkMagenta p-10 gap-6 rounded-xl flex flex-col ">
+          <div class="flex items-center">
+            <img
+              class="w-12 object-cover rounded-full"
+              src="./images/image-colton.jpg"
+              alt="image-colton"
+            />
+            <div class="ml-5">
+              <h2 class="text-xl font-bold">Colton Smith</h2>
+              <h3 class="text-xl font-bold text-SoftPink">Verified Buyer</h3>
+            </div>
+          </div>
+          <div>
+            <p class="text-lg">
+              "We needed the same printed design as the one we had ordered a
+              week prior. Not only did they find the original order, but we also
+              received it in time. Excellent!"
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full md:h-[85%] bg-DarkMagenta p-10 gap-6 rounded-xl mt-3 md:mt-5">
+          <div class="flex items-center">
+            <img
+              class="w-12 object-cover rounded-full"
+              src="./images/image-irene.jpg"
+              alt="image-irene"
+            />
+            <div class="ml-5">
+              <h2 class="text-xl font-bold">Irene Roberts</h2>
+              <h3 class="text-xl font-bold text-SoftPink">Verified Buyer</h3>
+            </div>
+          </div>
+          <div>
+            <p class="mt-4 text-lg">
+              "Customer service is always excellent and very quick turnaround.
+              Completely delighted with the simplicity of the purchase and the
+              speed of delivery."
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full md:h-[85%] bg-DarkMagenta p-10 gap-6 rounded-xl mt-3 mb-3 md:mt-10">
+          <div class="flex items-center">
+            <img
+              class="w-12 object-cover rounded-full"
+              src="./images/image-anne.jpg"
+              alt="image-anne"
+            />
+            <div class="ml-5">
+              <h2 class="text-xl font-bold">Anne Wallace</h2>
+              <h3 class="text-xl font-bold text-SoftPink">Verified Buyer</h3>
+            </div>
+          </div>
+          <div>
+            <p class="mt-4 text-lg">
+              "Put an order with this company and can only praise them for the
+              very high standard. Will definitely use them again and recommend
+              them to everyone!"
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
